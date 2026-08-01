@@ -7,7 +7,8 @@ export function Header() {
         <Link to="/" className="text-xl font-bold text-gray-900">
           My Blog
         </Link>
-        <nav className="flex gap-6 text-sm font-medium text-gray-600">
+
+        <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
           <Link
             to="/"
             className="hover:text-gray-900 [&.active]:text-gray-900"
@@ -20,6 +21,21 @@ export function Header() {
           >
             Giới thiệu
           </Link>
+
+          <div className="flex items-center gap-2 border-l border-gray-200 pl-6">
+            <Link
+              to="/login"
+              className="hover:text-gray-900 [&.active]:text-gray-900"
+            >
+              Đăng nhập
+            </Link>
+            <Link
+              to="/register"
+              className="rounded-md bg-gray-900 px-3 py-1.5 text-white hover:bg-gray-800"
+            >
+              Đăng ký
+            </Link>
+          </div>
         </nav>
       </div>
     </header>
